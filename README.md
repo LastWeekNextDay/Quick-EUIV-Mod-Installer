@@ -5,6 +5,9 @@
 - Python 3.6 or later
 
 ## Usage
+
+![Usage](https://i.imgur.com/cIuOQlW.gif)
+
 1. Download the script.
 2. Put the script into one of the following directories:
     - The directory where steamcmd.exe is located.
