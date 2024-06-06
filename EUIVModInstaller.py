@@ -135,6 +135,8 @@ class Program:
         copy_or_move = AnswerHandler.is_copy_or_move_answer(input())
         mod_handler = ModHandler(Program.initial_mods_folder, Program.target_mods_folder, copy_or_move == "c")
         for mod in os.listdir(Program.initial_mods_folder):
+            if not os.path.isdir(os.path.join(Program.initial_mods_folder, mod)):
+                continue
             mod_handler.move_mod(mod)
         mod_handler.confirm_move_existing_mods()
 
